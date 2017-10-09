@@ -39,7 +39,8 @@
 
     #lab {
         display: flex;
-
+        padding-bottom: 80px;
+        padding-top: 80px;
     }
 
     .lab-item {
@@ -57,13 +58,48 @@
         text-align: center;
     }
 
+    #projects {
+        background-color: #eeeeff;
+    }
+
+    .section-title {
+        padding-top: 50px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .projects-abstract{
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 50px;
+        text-align: justify;
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .projects-pictures {
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects-pictures img {
+        width: 200px;
+        height: 160px;
+        margin: 40px;
+
+    }
+
     #people {
         background-color: #eeeeee;
 
     }
 
+
     .people-item {
-        padding:50px;
+        padding:20px;
+        margin-left: 80px;
         display: flex;
         flex-direction: flex-start;
     }
@@ -91,6 +127,28 @@
         color:#333333;
     }
 
+    #publications {
+
+    }
+
+    .publist{
+        margin-left: 140px;
+    }
+    .pubtype{
+        margin-left: 140px;
+        font-size: 20px;
+    }
+
+    #contactInfo{
+
+    }
+
+    .contactLine{
+        margin-top: 30px;
+        margin-bottom: 200px;
+        text-align: center;
+    }
+
 </style>
 </head>
 
@@ -104,10 +162,10 @@
             </div>
 
             <div id='right-nav'>
-                <a class='nav-item' href='#projects'>About </a>
+                <a class='nav-item' href='#projects'>Research </a>
                 <a class='nav-item' href='#people'>People </a>
-                <a class='nav-item' href='#people'>Publications </a>
-                <a class='nav-item' href='#contact'>Contact </a>
+                <a class='nav-item' href='#publications'>Publications </a>
+                <a class='nav-item' href='#contactInfo'>Contact </a>
             </div>
         </div>
 
@@ -121,7 +179,43 @@
             </div>
         </div>
 
+        <div>
+
+        <div id='projects'>
+            <div class='section-title'>
+                <label> Research </label>
+            </div>
+
+            <div class='projects-abstract'>
+                <label> Dr. Gupta is a staff neuroradiologist and ER radiologist
+                    in the Department of Radiology at Massachusetts General Hospital,
+                    an Associate Professor of radiology at the Harvard Medical School,
+                    and a lecturer in Mechanical Engineering at MIT. He is
+                    interested in both research and clinical practice of radiology,
+                    currently devoting approximately 50% of his time to each of
+                    these activities. He also directs the Advanced X-ray Imaging
+                    Sciences (AXIS) Center at Mass General. His research is currently
+                    focused on three main topics: 1) development and clinical
+                    applications of novel X-ray imaging modalities including
+                    phase contrast imaging, ultra-high resolution computed
+                    tomography (CT), and dual-energy CT; 2) development of low-cost
+                    devices for imaging and image-guided interventions; and 3)
+                    study of traumatic brain injury (TBI) using advanced, quantitative
+                    MRI techniques.</label>
+            </div>
+            <div class='projects-pictures'>
+                <img src='img/dzo.png'></img>
+                <img src='img/dzo.png'></img>
+                <img src='img/dzo.png'></img>
+            </div>
+
+        </div>
+
         <div id='people'>
+            <div class='section-title'>
+                <label> People </label>
+            </div>
+
             <div class='people-item'>
                 <img src='img/dzo.png'></img>
                 <div class='people-item-content'>
@@ -140,6 +234,38 @@
                         has several sentences.
                 </div>
             </div>
+
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'> Xiaochun Lai
+                    <p class='people-item-title'> Postdoctoral Fellow
+                    <p class='people-item-bio'> This is the bio for Xiaochun. It
+                        has several sentences.
+                </div>
+            </div>
+
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'> Dufan Wu
+                    <p class='people-item-title'> Postdoctoral Fellow
+                    <p class='people-item-bio'> This is the bio for Dufan. It
+                        has several sentences.
+                </div>
+            </div>
+
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'>Achuta Kadambi
+                    <p class='people-item-title'>PhD student
+                    <p class='people-item-bio'> This is the bio for Achuta. It
+                        has several sentences.
+                </div>
+            </div>
+
+
             <div class='people-item'>
                 <img src='img/dzo.png'></img>
                 <div class='people-item-content'>
@@ -150,8 +276,42 @@
                 </div>
             </div>
         </div>
+        <div id='publications'>
+            <div class='section-title'>
+                <label> Selected Publications </label>
+            </div>
+            <label class='pubtype'> Papers </label>
+            <ul class='publist'>
+                <li> Pub1 </li>
+                <li> Pub2 </li>
+                <li> Pub3 </li>
+            </ul>
+            <label class='pubtype'> Patents </label>
+            <ul class='publist'>
+                <li> Pat1 </li>
+                <li> Pat2 </li>
+                <li> Pat3 </li>
+            </ul>
+            <label class='pubtype'> In the News </label>
+            <ul class='publist'>
+                <!-- CHANGE THESE TO LINKS -->
+                <li> <a href='http://imes.mit.edu/avilash-cramer-named-2017-broshy-fellowship-award-recipient/'>
+                     Avilash Cramer named 2017 Broshy fellowship award recipient </a> </li>
+                <li> <a href='http://imes.mit.edu/field-work-navajo-reservation/'>
+                    Field Work on the Navajo Reservation </a> </li>
+            </ul>
 
-        <div id='projects' class='container'>
+        </div>
+        <div id='contactInfo'>
+            <div class='section-title'>
+                <label> Contact Info </label>
+            </div>
+            <div class= 'contactLine'>
+                <label>Email: rgupta1@mgh.harvard.edu </label> <br>
+                <label>Address: 149 13th street, Rm. 2.406 </label> <br>
+                <label>Charlestown, MA, 02129 </label> <br>
+                
+            </div>
         </div>
 
 </body>
