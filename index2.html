@@ -1,0 +1,151 @@
+<html>
+
+<head>
+
+<style>
+
+    body {
+        font-family: helvetica;
+    }
+
+    #nav {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #563d7c;
+    }
+
+    .nav-item {
+        margin:10px;
+        color:#ffffff;
+    }
+
+    #lab {
+        display: flex;
+
+    }
+
+    .lab-item {
+        margin: 50px;
+    }
+
+    .lab-item img {
+        height:300px;
+    }
+
+    .overview-content {
+        font-size: 30px;
+        margin:100px;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    #people {
+        background-color: #eeeeee;
+
+    }
+
+    .people-item {
+        padding:50px;
+        display: flex;
+        flex-direction: flex-start;
+    }
+
+    .people-item-content{
+        margin-left: 20px;
+    }
+
+    .people-item img {
+        height:100px;
+        width: 100px;
+    }
+
+    .people-item-name {
+        font-size: 12px;
+    }
+
+    .people-item-title {
+        font-size: 10px;
+        color: #555555;
+    }
+
+    .people-item-bio {
+        font-size: 9px;
+        color:#333333;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div class='outer-wrapper'>
+
+        <div id='nav'>
+            <a class='nav-item' href='#people'>People </a>
+            <a class='nav-item' href='#projects'>Projects </a>
+            <a class='nav-item' href='#contact'>Contact </a>
+        </div>
+
+        <div id='lab'>
+            <div class='overview-content lab-item'>
+                The Gupta Lab is Awesome. We do XRays and Wow!
+            </div>
+
+            <div class='lab-item'>
+                <img src='img/geant_copy.png'></img>
+            </div>
+        </div>
+
+        <div id='people'>
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'>Dr. Gupta
+                    <p class='people-item-title'>The Big Boss
+                    <p class='people-item-bio'> This is the bio for Dr. Gupta. It
+                        has several sentences. And kinda rambles on and on.
+                </div>
+            </div>
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'>Avilash Cramer
+                    <p class='people-item-title'>Top Top Serf
+                    <p class='people-item-bio'> This is the bio for Avilash. It
+                        has several sentences. And kinda rambles on and on.
+                </div>
+            </div>
+        </div>
+
+        <div id='projects' class='container'>
+            <div class='row'>
+                <div class='col-lg-12 text-center'>
+                    <h2 class='section-heading'>Our Amazing Projects</h2>
+                    <h3 class='seciton-subheading text-muted'>Rock and Roll</h3>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-4'>
+                    <div class='team-member'>
+                        <img class='mx-auto rounded-circle' src='img/dzo.png' alt></img>
+                        <h4>Static CT</h4>
+                    </div>
+                </div>
+                <div class='col-sm-4'>
+                    <div class='team-member'>
+                        <img class='mx-auto rounded-circle' src='img/dzo.png' alt></img>
+                        <h4>Static CT</h4>
+                    </div>
+                </div>
+                <div class='col-sm-4'>
+                    <div class='team-member'>
+                        <img class='mx-auto rounded-circle' src='img/dzo.png' alt></img>
+                        <h4>Static CT</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
