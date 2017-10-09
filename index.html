@@ -1,217 +1,318 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+<style>
 
-    <title>Gupta Lab @ MGH</title>
+    body {
+        font-family: 'Roboto Slab', serif;
+        margin:0px;
+    }
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #563d7c;
+        position: fixed;
+        width:100%;
+        padding: 10px;
 
-    <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    }
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+    #right-nav{
+        padding-right: 40px;
+    }
+    #left-nav{
+        padding-left: 20px;
+    }
 
-    <!-- Custom styles for this template -->
-    <link href="css/new-age.min.css" rel="stylesheet">
+    #nav a {
+        text-decoration: none
+    }
 
-  </head>
+    .nav-item {
+        margin:10px;
+        color:#ffffff;
+    }
 
-  <body id="page-top">
+    #lab {
+        display: flex;
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Gupta Lab home</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#people">People</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    .lab-item {
+        margin: 50px;
+    }
 
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5">The Advanced X-ray Imaging Sciences center at MGH</h1>
-              <!-- <a href="#people" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a> -->
+    .lab-item img {
+        height:300px;
+    }
+
+    .overview-content {
+        font-size: 30px;
+        margin:100px;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    #projects {
+        background-color: #eeeeff;
+    }
+
+    .section-title {
+        padding-top: 50px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .projects-abstract{
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 50px;
+        text-align: justify;
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .projects-pictures {
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects-pictures img {
+        width: 200px;
+        height: 160px;
+        margin: 40px;
+
+    }
+
+    #people {
+        background-color: #eeeeee;
+
+    }
+
+
+    .people-item {
+        padding:20px;
+        margin-left: 80px;
+        display: flex;
+        flex-direction: flex-start;
+    }
+
+    .people-item-content{
+        margin-left: 20px;
+    }
+
+    .people-item img {
+        height:100px;
+        width: 100px;
+    }
+
+    .people-item-name {
+        font-size: 12px;
+    }
+
+    .people-item-title {
+        font-size: 10px;
+        color: #555555;
+    }
+
+    .people-item-bio {
+        font-size: 9px;
+        color:#333333;
+    }
+
+    #publications {
+
+    }
+
+    .publist{
+        margin-left: 140px;
+    }
+    .pubtype{
+        margin-left: 140px;
+        font-size: 20px;
+    }
+
+    #contactInfo{
+
+    }
+
+    .contactLine{
+        margin-top: 30px;
+        margin-bottom: 200px;
+        text-align: center;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div id='home'>
+
+        <div id='nav'>
+            <div id='left-nav'>
+                <a class='nav-item' href="#home">Gupta Lab Home </a>
             </div>
-          </div>
-          <div class="col-lg-5 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
-              </div>
+
+            <div id='right-nav'>
+                <a class='nav-item' href='#projects'>Research </a>
+                <a class='nav-item' href='#people'>People </a>
+                <a class='nav-item' href='#publications'>Publications </a>
+                <a class='nav-item' href='#contactInfo'>Contact </a>
             </div>
-          </div>
         </div>
-      </div>
-    </header>
 
-    <section class="people bg-primary text-center" id="people">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Discover what all the buzz is about!</h2>
-            <p>Our app is available on any mobile device! Download now to get started!</p>
-            <div class="badges">
-              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+        <div id='lab'>
+            <div class='overview-content lab-item'>
+                The Advanced X-ray Imaging Sciences Center at MGH
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="projectss" id="projects">
-      <div class="container">
-        <div class="section-heading text-center">
-          <h2>Unlimited Projects, Unlimited Fun</h2>
-          <p class="text-muted">Check out our cool projects!</p>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
-              </div>
+            <div class='lab-item'>
+                <img src='img/geant_copy.png'></img>
             </div>
-          </div>
-          <div class="col-lg-8 my-auto">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-screen-smartphone text-primary"></i>
-                    <h3>Device Mockups</h3>
-                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-camera text-primary"></i>
-                    <h3>Flexible Use</h3>
-                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-present text-primary"></i>
-                    <h3>Free to Use</h3>
-                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-lock-open text-primary"></i>
-                    <h3>Open Source</h3>
-                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                  </div>
-                </div>
-              </div>
+        </div>
+
+        <div>
+
+        <div id='projects'>
+            <div class='section-title'>
+                <label> Research </label>
             </div>
-          </div>
+
+            <div class='projects-abstract'>
+                <label> Dr. Gupta is a staff neuroradiologist and ER radiologist
+                    in the Department of Radiology at Massachusetts General Hospital,
+                    an Associate Professor of radiology at the Harvard Medical School,
+                    and a lecturer in Mechanical Engineering at MIT. He is
+                    interested in both research and clinical practice of radiology,
+                    currently devoting approximately 50% of his time to each of
+                    these activities. He also directs the Advanced X-ray Imaging
+                    Sciences (AXIS) Center at Mass General. His research is currently
+                    focused on three main topics: 1) development and clinical
+                    applications of novel X-ray imaging modalities including
+                    phase contrast imaging, ultra-high resolution computed
+                    tomography (CT), and dual-energy CT; 2) development of low-cost
+                    devices for imaging and image-guided interventions; and 3)
+                    study of traumatic brain injury (TBI) using advanced, quantitative
+                    MRI techniques.</label>
+            </div>
+            <div class='projects-pictures'>
+                <img src='img/dzo.png'></img>
+                <img src='img/dzo.png'></img>
+                <img src='img/dzo.png'></img>
+            </div>
+
         </div>
-      </div>
-    </section>
 
-    <section class="cta">
-      <div class="cta-content">
-        <div class="container">
-          <h2>Stop waiting.<br>Start building.</h2>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+        <div id='people'>
+            <div class='section-title'>
+                <label> People </label>
+            </div>
+
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'>Dr. Gupta
+                    <p class='people-item-title'>The Big Boss
+                    <p class='people-item-bio'> This is the bio for Dr. Gupta. It
+                        has several sentences.
+                </div>
+            </div>
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'>Wolfgang Krull
+                    <p class='people-item-title'>What is your position title?
+                    <p class='people-item-bio'> This is the bio for Wolfgang. It
+                        has several sentences.
+                </div>
+            </div>
+
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'> Xiaochun Lai
+                    <p class='people-item-title'> Postdoctoral Fellow
+                    <p class='people-item-bio'> This is the bio for Xiaochun. It
+                        has several sentences.
+                </div>
+            </div>
+
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'> Dufan Wu
+                    <p class='people-item-title'> Postdoctoral Fellow
+                    <p class='people-item-bio'> This is the bio for Dufan. It
+                        has several sentences.
+                </div>
+            </div>
+
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'>Achuta Kadambi
+                    <p class='people-item-title'>PhD student
+                    <p class='people-item-bio'> This is the bio for Achuta. It
+                        has several sentences.
+                </div>
+            </div>
+
+
+            <div class='people-item'>
+                <img src='img/dzo.png'></img>
+                <div class='people-item-content'>
+                    <p class='people-item-name'>Avilash Cramer
+                    <p class='people-item-title'>PhD student
+                    <p class='people-item-bio'> This is the bio for Avilash. It
+                        has several sentences.
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="overlay"></div>
-    </section>
+        <div id='publications'>
+            <div class='section-title'>
+                <label> Selected Publications </label>
+            </div>
+            <label class='pubtype'> Papers </label>
+            <ul class='publist'>
+                <li> Pub1 </li>
+                <li> Pub2 </li>
+                <li> Pub3 </li>
+            </ul>
+            <label class='pubtype'> Patents </label>
+            <ul class='publist'>
+                <li> Pat1 </li>
+                <li> Pat2 </li>
+                <li> Pat3 </li>
+            </ul>
+            <label class='pubtype'> In the News </label>
+            <ul class='publist'>
+                <!-- CHANGE THESE TO LINKS -->
+                <li> <a href='http://imes.mit.edu/avilash-cramer-named-2017-broshy-fellowship-award-recipient/'>
+                     Avilash Cramer named 2017 Broshy fellowship award recipient </a> </li>
+                <li> <a href='http://imes.mit.edu/field-work-navajo-reservation/'>
+                    Field Work on the Navajo Reservation </a> </li>
+            </ul>
 
-    <section class="contact bg-primary" id="contact">
-      <div class="container">
-        <h2>We
-          <i class="fa fa-heart"></i>
-          new friends!</h2>
-        <ul class="list-inline list-social">
-          <li class="list-inline-item social-twitter">
-            <a href="#">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-facebook">
-            <a href="#">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-google-plus">
-            <a href="#">
-              <i class="fa fa-google-plus"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+        </div>
+        <div id='contactInfo'>
+            <div class='section-title'>
+                <label> Contact Info </label>
+            </div>
+            <div class= 'contactLine'>
+                <label>Email: rgupta1@mgh.harvard.edu </label> <br>
+                <label>Address: 149 13th street, Rm. 2.406 </label> <br>
+                <label>Charlestown, MA, 02129 </label> <br>
+                
+            </div>
+        </div>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2017 Gupta Lab. All Rights Reserved.</p>
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
-
-  </body>
-
+</body>
 </html>
