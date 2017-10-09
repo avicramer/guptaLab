@@ -2,16 +2,26 @@
 
 <head>
 
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab">
 <style>
 
     body {
-        font-family: helvetica;
+        font-family: 'Roboto Slab', serif;
+        margin:0px;
     }
 
     #nav {
         display: flex;
         justify-content: flex-end;
         background-color: #563d7c;
+        position: fixed;
+        width:100%;
+        padding-right:40px;
+    }
+
+    #nav a {
+        text-decoration: none
     }
 
     .nav-item {
@@ -79,7 +89,6 @@
 <body>
 
     <div class='outer-wrapper'>
-
         <div id='nav'>
             <a class='nav-item' href='#people'>People </a>
             <a class='nav-item' href='#projects'>Projects </a>
@@ -118,34 +127,7 @@
         </div>
 
         <div id='projects' class='container'>
-            <div class='row'>
-                <div class='col-lg-12 text-center'>
-                    <h2 class='section-heading'>Our Amazing Projects</h2>
-                    <h3 class='seciton-subheading text-muted'>Rock and Roll</h3>
-                </div>
-            </div>
-            <div class='row'>
-                <div class='col-sm-4'>
-                    <div class='team-member'>
-                        <img class='mx-auto rounded-circle' src='img/dzo.png' alt></img>
-                        <h4>Static CT</h4>
-                    </div>
-                </div>
-                <div class='col-sm-4'>
-                    <div class='team-member'>
-                        <img class='mx-auto rounded-circle' src='img/dzo.png' alt></img>
-                        <h4>Static CT</h4>
-                    </div>
-                </div>
-                <div class='col-sm-4'>
-                    <div class='team-member'>
-                        <img class='mx-auto rounded-circle' src='img/dzo.png' alt></img>
-                        <h4>Static CT</h4>
-                    </div>
-                </div>
-            </div>
         </div>
 
 </body>
-
 </html>
