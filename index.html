@@ -68,9 +68,10 @@
     }
 
     .logos img{
-        margin-bottom: 50px;
+        margin-bottom: 10px;
+        margin-left: 7.5%;
         /*height: 50px;*/
-        width: 100%;
+        width: 90%;
 
     }
 
@@ -216,8 +217,12 @@
 
             <div class='projects-abstract'>
                 <label>
-                    The lab of Dr. Rajiv Gupta is broadly focused on making radiography tools safer and more accessible.
-                    Our lab is comprised of scientists and engineers from a variety of backgrounds.
+                    The Gupta Lab studies the design and implementation of new
+                    X-ray technologies. Our research approach is interdisciplinary,
+                    drawing from electrical engineering, applied mathematics,
+                    computational imaging, and bioengineering. We are partnered
+                    with groups at MIT, Harvard Medical School, and NASA.
+
                     Currently, we have 4 major projects:
                     <br>
                     <br>
@@ -230,6 +235,7 @@
                     <br>
                     4) Development a of nanoscale x-ray imaging system for printed
                     circuit board (PCB) evaluation.
+
                 </label>
             </div>
             <div class='projects-pictures'>
@@ -318,11 +324,23 @@
             </div>
             <label class='pubtype'> Papers </label>
             <ul class='publist'>
-                <li> Zucker EJ, Ganguli S, Ghoshhajra BB, Gupta R, Prabhakar A. Imaging of venous compression syndromes. Cardiovascular Diagnosis and Therapy, 2016;6:519-32, doi: 10.21037/cdt.2016.11.19, 2016 </li>
+                <li> Zucker EJ, Ganguli S, Ghoshhajra BB, Gupta R, Prabhakar A.
+                    Imaging of venous compression syndromes. Cardiovascular Diagnosis
+                    and Therapy, 2016;6:519-32, doi: 10.21037/cdt.2016.11.19, 2016 </li>
                 <br>
-                <li> Ando M, Sunaguchi N, Shimao D, Pan A, Yuasa T, Mori K, Suzuki Y, Jin G, Kim J-K, Lim J-H, Seo S-J, Ichihara S, Ohura N, Gupta R. Dark-Field Imaging: Recent Developments and Potential Clinical Applications. Physica Medica, Volume 32, Issue 12, December 2016, Pages 1801-1812, ISSN 1120-1797, http://dx.doi.org/10.1016/j.ejmp.2016.11.103 </li>
+                <li> Ando M, Sunaguchi N, Shimao D, Pan A, Yuasa T, Mori K, Suzuki Y,
+                    Jin G, Kim J-K, Lim J-H, Seo S-J, Ichihara S, Ohura N, Gupta R.
+                    Dark-Field Imaging: Recent Developments and Potential Clinical
+                    Applications. Physica Medica, Volume 32, Issue 12, December 2016,
+                    Pages 1801-1812, ISSN 1120-1797,
+                    http://dx.doi.org/10.1016/j.ejmp.2016.11.103 </li>
                 <br>
-                <li> Morotti A, Romero JM, Jessel MJ, Brouwers HB, Gupta R, Schwab K, Vashkevich A, Ayres A, Anderson CD, Gurol ME, Viswanathan A, Greenberg SM, Rosand J, Goldstein JN. Effect of CTA Tube Current on Spot Sign Detection and Accuracy for Prediction of Intracerebral Hemorrhage Expansion. AJNR Am J Neuroradiol. 2016 May 19. [Epub ahead of print] PubMed PMID: 27197985.</li>
+                <li> Morotti A, Romero JM, Jessel MJ, Brouwers HB, Gupta R, Schwab K,
+                    Vashkevich A, Ayres A, Anderson CD, Gurol ME, Viswanathan A,
+                    Greenberg SM, Rosand J, Goldstein JN. Effect of CTA Tube Current
+                    on Spot Sign Detection and Accuracy for Prediction of Intracerebral
+                    Hemorrhage Expansion. AJNR Am J Neuroradiol. 2016 May 19. [Epub
+                    ahead of print] PubMed PMID: 27197985.</li>
             </ul>
             <label class='pubtype'> Patents </label>
             <ul class='publist'>
@@ -364,6 +382,29 @@ WO 2016007605 A1 </li>
             <!-- </div> -->
 
         </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+
+        <!-- smoother nav links -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.nav-item').click(function(event) {
+
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+                var hash = this.hash;
+                var scrollTime = 600; // ms
+
+                $('html, body').animate({scrollTop: $(hash).offset().top}, scrollTime, function() {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if hash exists
+        });
+    });
+    </script>
+
 
 </body>
 </html>
